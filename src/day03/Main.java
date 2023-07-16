@@ -66,8 +66,6 @@ public class Main {
              */
 
             Map<String, Integer> rucksack1 = new HashMap<>();
-            Map<String, Integer> rucksack2 = new HashMap<>();
-            Map<String, Integer> rucksack3 = new HashMap<>();
 
             List<String> resultPart2 = new ArrayList<>();
             Map<String, Integer> matches = new HashMap<>();
@@ -75,7 +73,6 @@ public class Main {
 
             br = new BufferedReader(new FileReader(file));
             while ((st = br.readLine()) != null) {
-
                 reads++;
                 String[] array = st.split("");
 
