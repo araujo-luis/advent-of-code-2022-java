@@ -60,10 +60,6 @@ public class Main {
 
             }
 
-            //for (var m : monkeys) {
-            //    System.out.println(m);
-            //}
-
             var loops = 10000;
             for (var i = 0; i < loops; i++) {
                 for (var currentMonkey : monkeys) {
@@ -77,13 +73,6 @@ public class Main {
                         currentMonkey.setInspections(currentMonkey.getInspections() + 1);
                     }
                     currentMonkey.getItems().clear();
-
-                    //break;
-
-                    //for (var m : monkeys) {
-                    //    System.out.println(m);
-                    //}
-                    //System.out.println("----------------");
                 }
 
 
@@ -97,7 +86,7 @@ public class Main {
 
             BigInteger part1 = BigInteger.valueOf(monkeys.get(0).getInspections()).multiply(BigInteger.valueOf(monkeys.get(1).getInspections()));
 
-            System.out.println("PART 1: " +part1 );
+            System.out.println("PART 2: " +part1 );
 
 
         } catch (IOException e) {
@@ -129,8 +118,6 @@ public class Main {
         return operationResult % 9699690; // PART 2
         //return operationResult;
     }
-//i = i %2;
-    // i%=2;
 
     private static long solveOperation(String operation, Long item) {
         var split = operation.split(" ");
